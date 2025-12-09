@@ -23,7 +23,7 @@ interface Attachment {
   url?: string;
 }
 
-const API_URL = "http://localhost:5000/api/llm/chat";
+const API_URL = "https://polaris-ai.onrender.com/api/llm/chat";
 
 const ChatContainer = () => {
   const [messages, setMessages] = useState<Message[]>([]);
