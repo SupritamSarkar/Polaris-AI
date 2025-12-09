@@ -1,0 +1,8 @@
+Flask
+Flask-Cors
+python-dotenv
+openai
+huggingface-hub
+scikit-learn
+numpy
+requests

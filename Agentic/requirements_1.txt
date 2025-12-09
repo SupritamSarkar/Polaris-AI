@@ -1,0 +1,25 @@
+# Agentic Workflow System - Python Dependencies
+# Install with: pip install -r requirements.txt
+
+# Core LLM and ML libraries
+transformers
+sentence-transformers
+torch
+scikit-learn
+numpy
+Flask
+flask-cors
+# Quantization and acceleration
+accelerate
+bitsandbytes
+
+# --- MODIFICATIONS ---
+# Added dependencies for API calls and .env loading
+openai>=1.0.0
+python-dotenv>=1.0.0  # For environment variables
+# --- END MODIFICATIONS ---
+
+# Optional: For production deployment
+# fastapi>=0.100.0
+# uvicorn>=0.23.0
+pymongo
