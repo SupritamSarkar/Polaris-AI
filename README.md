@@ -2,6 +2,10 @@
 
 Polaris-AI is a modern, responsive AI chatbot interface built with performance and user experience in mind. It features a sleek design, separated frontend and backend architecture, and smooth UI transitions.
 
+## 🔗 Live Demo
+
+Check out the live application here: **[https://polaris-ai-kappa.vercel.app](https://polaris-ai-kappa.vercel.app)**
+
 ## 🛠️ Tech Stack
 
 **Frontend:**
