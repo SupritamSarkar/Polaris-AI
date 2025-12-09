@@ -12,7 +12,7 @@ Polaris-AI is a modern, responsive AI chatbot interface built with performance a
 * **[shadcn/ui](https://ui.shadcn.com/)** - Component library
 
 **Backend:**
-* **Node.js / Python** (Update this based on your specific backend stack)
+* **Node.js**
 * **API Integration**
 
 ## 🚀 Getting Started
