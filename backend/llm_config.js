@@ -70,7 +70,12 @@ export async function getHuggingFaceCompletion(prompt, history = [], files = [])
         return chatCompletion.choices[0].message.content;
 
     } catch (error) {
-        console.error("Hugging Face Router Error:", error);
-        throw new Error("Failed to get response from LLM via HF Router.");
+        console.error("Hugging Face Router Error Details:", {
+            message: error.message,
+            stack: error.stack,
+            response: error.response ? error.response.data : 'No response data',
+            status: error.status || 'Unknown status'
+        });
+        throw new Error(`Failed to get response from LLM: ${error.message}`);
     }
 }
