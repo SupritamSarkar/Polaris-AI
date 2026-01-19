@@ -14,10 +14,15 @@ router.post("/chat", upload.array("attachments"), async (req, res) => {
 
     // Parse history back to object if sent as stringified JSON
     let parsedHistory = [];
-    if (typeof history === "string") {
-      parsedHistory = JSON.parse(history);
-    } else if (Array.isArray(history)) {
-      parsedHistory = history;
+    try {
+        if (typeof history === "string") {
+            parsedHistory = JSON.parse(history);
+        } else if (Array.isArray(history)) {
+            parsedHistory = history;
+        }
+    } catch (parseError) {
+        console.warn("Failed to parse history:", parseError);
+        parsedHistory = []; // Fallback to empty history
     }
 
     // Call the LLM service with files
